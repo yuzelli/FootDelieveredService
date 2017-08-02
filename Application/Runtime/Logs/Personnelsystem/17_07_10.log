@@ -1,0 +1,64 @@
+[ 2017-07-10T00:01:37+08:00 ] ::1 /Plum/1/Staff/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001974s ]
+NOTIC: [2048] Declaration of Personnelsystem\Controller\StaffController::Show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\wampserver\www\Plum\1\Application\Personnelsystem\Controller\StaffController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0069s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `saya_staff` [ RunTime:0.0074s ]
+NOTIC: [8] Undefined index: depId E:\wampserver\www\Plum\1\Application\Personnelsystem\Controller\StaffController.class.php 第 170 行.
+SQL: SELECT * FROM `saya_staff` WHERE ( stBlacklist=0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000400s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `saya_variables` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `saya_variables` WHERE ( vId=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `saya_department` [ RunTime:0.0064s ]
+SQL: SELECT `dId`,`dPid`,`dPsid`,`dName` FROM `saya_department` WHERE ( dId=0 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001737s ]
+
+[ 2017-07-10T00:02:08+08:00 ] ::1 /Plum/1/Personnelsystem/Staff/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003023s ]
+NOTIC: [2048] Declaration of Personnelsystem\Controller\StaffController::Show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\wampserver\www\Plum\1\Application\Personnelsystem\Controller\StaffController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0063s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: depId E:\wampserver\www\Plum\1\Application\Personnelsystem\Controller\StaffController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `saya_staff` [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_staff` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `saya_department` [ RunTime:0.0070s ]
+SQL: SELECT `dId`,`dPid`,`dPsid`,`dName` FROM `saya_department`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `saya_variables` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `saya_variables` WHERE ( vId=1 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `saya_variables` WHERE ( vId=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `saya_variables` WHERE ( vId=3 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000637s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002856s ]
+

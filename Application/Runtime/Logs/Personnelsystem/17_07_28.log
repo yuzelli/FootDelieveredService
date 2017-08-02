@@ -1,0 +1,39 @@
+[ 2017-07-28T00:31:07+08:00 ] ::1 /mssd/1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002011s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0075s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `sName`,`sDepartment`,`sCopyrightName`,`sCopyrightAuthor`,`sVersion`,`sCopyrightAuthorTel`,`sCopyrightAuthorQQ` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `saya_admin_role` [ RunTime:0.0059s ]
+NOTIC: [8] Undefined variable: morepowersValue E:\wampserver\www\mssd\1\Application\Personnelsystem\Controller\IndexController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `saya_department` [ RunTime:0.0069s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2017-07-28T00:31:07+08:00 ] ::1 /mssd/1/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002158s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0089s ]
+SQL: SELECT `sLogo`,`sName`,`sCopyrightName`,`sCopyrightAuthor`,`sCheckCodeSwitch`,`sVersion`,`sCopyrightAuthorTel`,`sCopyrightAuthorQQ` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000708s ]
+NOTIC: [8] Undefined index: sname E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\a451a05b0825cb45a2701106fb08940a.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001978s ]
+

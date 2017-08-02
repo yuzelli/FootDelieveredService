@@ -1,0 +1,694 @@
+[ 2017-07-30T11:08:05+08:00 ] ::1 /mssd/1/Personnelsystem/Login/CheckLogin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000152s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002843s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003460s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0077s ]
+SQL: SELECT `sCheckCodeSwitch`,`sErrorPwdLockNum`,`sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `saya_admin` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `saya_admin` WHERE ( aUser='system' OR aTel='system' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `saya_admin` SET `aLoginNum`='29',`aErrorPwdNum`='0' WHERE ( aUser='system' OR aTel='system' ) [ RunTime:0.0369s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000607s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001667s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002119s ]
+
+[ 2017-07-30T11:08:07+08:00 ] ::1 /mssd/1/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003192s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0089s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `sName`,`sDepartment`,`sCopyrightName`,`sCopyrightAuthor`,`sVersion`,`sCopyrightAuthorTel`,`sCopyrightAuthorQQ` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `saya_admin_role` [ RunTime:0.0099s ]
+NOTIC: [8] Undefined variable: morepowersValue E:\wampserver\www\mssd\1\Application\Personnelsystem\Controller\IndexController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `saya_department` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `saya_department` WHERE ( dId=0 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `saya_staff` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_staff` WHERE `stBirthdate` LIKE '%07-30%' AND `stBirthdateType` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_staff` WHERE `stBirthdate` LIKE '%07-08%' AND `stBirthdateType` = 2 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `saya_hdmenu` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `saya_hdmenu`  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000756s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001350s ]
+NOTIC: [8] Undefined variable: rs_users E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\893122f858811a5339e67690bf0a2103.php 第 32 行.
+NOTIC: [8] Undefined variable: rs_admin E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\893122f858811a5339e67690bf0a2103.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090921s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002341s ]
+
+[ 2017-07-30T11:08:07+08:00 ] ::1 /mssd/1/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003783s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0071s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `saya_admin` [ RunTime:0.0100s ]
+SQL: SELECT `aLoginNum` FROM `saya_admin` WHERE ( aUser='system' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `saya_admin_role` [ RunTime:0.0119s ]
+NOTIC: [8] Undefined variable: morepowersValue E:\wampserver\www\mssd\1\Application\Personnelsystem\Controller\IndexController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `saya_hdmenu` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `saya_hdmenu`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_admin_role` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_admin` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `saya_department` [ RunTime:0.0212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_department` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `saya_staff` [ RunTime:0.0097s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_staff` WHERE ( stBlacklist=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_staff` WHERE ( stJobState=1 AND stBlacklist=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_staff` WHERE ( stJobState=0 AND stBlacklist=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_staff` WHERE ( stBlacklist=1 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `sName`,`sCopyrightName`,`sCopyrightAuthor`,`sCopyrightAuthorTel`,`sCopyrightAuthorQQ` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000396s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000773s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002677s ]
+
+[ 2017-07-30T11:08:07+08:00 ] ::1 /mssd/1/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000216s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002299s ]
+
+[ 2017-07-30T11:08:10+08:00 ] ::1 /mssd/1/Department/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002296s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0076s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `sDepartment` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000350s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000744s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001749s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002484s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003219s ]
+
+[ 2017-07-30T11:08:13+08:00 ] ::1 /mssd/1/Personnelsystem/Department/listsedit/status/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000193s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002091s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0091s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `saya_staff` [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `saya_order_info` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `saya_order_info` WHERE ( del_flag<>1 AND order_status=0 )  [ RunTime:0.0149s ]
+SQL: SELECT * FROM `saya_staff` WHERE ( stJobState = 1 )  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000643s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001334s ]
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 72 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 80 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 72 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 80 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 72 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 80 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 72 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 80 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 72 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 80 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 72 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 80 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 72 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 80 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 72 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 80 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 72 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 80 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 72 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 80 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 72 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 80 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 72 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 80 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 72 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 80 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 72 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 80 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 72 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 80 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 72 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 80 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001725s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003366s ]
+
+[ 2017-07-30T11:10:38+08:00 ] ::1 /mssd/1/Personnelsystem/Department/listsedit/status/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000125s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002107s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0072s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `saya_staff` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `saya_order_info` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `saya_order_info` WHERE ( del_flag<>1 AND order_status=0 )  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `saya_staff` WHERE ( stJobState = 1 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000412s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000778s ]
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 74 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 81 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 74 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 81 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 74 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 81 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 74 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 81 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 74 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 81 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 74 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 81 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 74 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 81 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 74 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 81 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 74 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 81 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 74 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 81 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 74 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 81 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 74 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 81 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 74 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 81 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 74 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 81 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 74 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 81 行.
+NOTIC: [8] Undefined index: stName E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 73 行.
+NOTIC: [8] Undefined index: stTel E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 74 行.
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002055s ]
+
+[ 2017-07-30T11:10:54+08:00 ] ::1 /mssd/1/Personnelsystem/Department/listsedit/status/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002567s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0072s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `saya_staff` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `saya_order_info` [ RunTime:0.0076s ]
+SQL: SELECT * FROM saya_order_info  as  oi INNER JOIN saya_staff  as  s  on  oi.stId = s.stId  WHERE ( oi.del_flag<>1 AND oi.order_status=1 )  [ RunTime:0.0409s ]
+SQL: SELECT * FROM `saya_staff` WHERE ( stJobState = 1 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000406s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000911s ]
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003194s ]
+
+[ 2017-07-30T11:11:00+08:00 ] ::1 /mssd/1/Personnelsystem/Department/listsedit/status/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002390s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0058s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `saya_staff` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `saya_order_info` [ RunTime:0.0105s ]
+SQL: SELECT * FROM saya_order_info  as  oi INNER JOIN saya_staff  as  s  on  oi.stId = s.stId  WHERE ( oi.del_flag<>1 AND oi.order_status=2 )  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `saya_staff` WHERE ( stJobState = 1 )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000416s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000819s ]
+NOTIC: [8] Undefined index: status E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\0047855372178aedb9f750800de692f7.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003075s ]
+
+[ 2017-07-30T11:11:06+08:00 ] ::1 /mssd/1/Personnelsystem/Department/orderdetail/order_id/23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002885s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0074s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `saya_order_info` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `saya_order_info` WHERE ( order_id=23 ) LIMIT 1   [ RunTime:0.0338s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000405s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000767s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002051s ]
+
+[ 2017-07-30T11:13:27+08:00 ] ::1 /mssd/1/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001845s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0075s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `sName`,`sDepartment`,`sCopyrightName`,`sCopyrightAuthor`,`sVersion`,`sCopyrightAuthorTel`,`sCopyrightAuthorQQ` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `saya_admin_role` [ RunTime:0.0075s ]
+NOTIC: [8] Undefined variable: morepowersValue E:\wampserver\www\mssd\1\Application\Personnelsystem\Controller\IndexController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `saya_department` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `saya_department` WHERE ( dId=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `saya_staff` [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_staff` WHERE `stBirthdate` LIKE '%07-30%' AND `stBirthdateType` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_staff` WHERE `stBirthdate` LIKE '%07-08%' AND `stBirthdateType` = 2 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `saya_hdmenu` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `saya_hdmenu`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000543s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000898s ]
+NOTIC: [8] Undefined variable: rs_users E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\893122f858811a5339e67690bf0a2103.php 第 32 行.
+NOTIC: [8] Undefined variable: rs_admin E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\893122f858811a5339e67690bf0a2103.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001831s ]
+
+[ 2017-07-30T11:13:27+08:00 ] ::1 /mssd/1/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001833s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0081s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `saya_admin` [ RunTime:0.0066s ]
+SQL: SELECT `aLoginNum` FROM `saya_admin` WHERE ( aUser='system' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `saya_admin_role` [ RunTime:0.0083s ]
+NOTIC: [8] Undefined variable: morepowersValue E:\wampserver\www\mssd\1\Application\Personnelsystem\Controller\IndexController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `saya_hdmenu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `saya_hdmenu`  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_admin_role` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_admin` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `saya_department` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_department` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `saya_staff` [ RunTime:0.0091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_staff` WHERE ( stBlacklist=0 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_staff` WHERE ( stJobState=1 AND stBlacklist=0 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_staff` WHERE ( stJobState=0 AND stBlacklist=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_staff` WHERE ( stBlacklist=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `sName`,`sCopyrightName`,`sCopyrightAuthor`,`sCopyrightAuthorTel`,`sCopyrightAuthorQQ` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000384s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000741s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002015s ]
+
+[ 2017-07-30T11:13:37+08:00 ] ::1 /mssd/1/Department/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001815s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0075s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `sDepartment` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000335s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000697s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002384s ]
+
+[ 2017-07-30T11:13:41+08:00 ] ::1 /mssd/1/LoginTrue/ExitLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001785s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0067s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000590s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001883s ]
+
+[ 2017-07-30T11:13:42+08:00 ] ::1 /mssd/1/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002779s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0089s ]
+SQL: SELECT `sLogo`,`sName`,`sCopyrightName`,`sCopyrightAuthor`,`sCheckCodeSwitch`,`sVersion`,`sCopyrightAuthorTel`,`sCopyrightAuthorQQ` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000599s ]
+NOTIC: [8] Undefined index: sname E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\a451a05b0825cb45a2701106fb08940a.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002101s ]
+
+[ 2017-07-30T11:14:00+08:00 ] ::1 /mssd/1/Personnelsystem/Login/CheckLogin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001897s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0084s ]
+SQL: SELECT `sCheckCodeSwitch`,`sErrorPwdLockNum`,`sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `saya_admin` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `saya_admin` WHERE ( aUser='system' OR aTel='system' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `saya_admin` SET `aLoginNum`='30',`aErrorPwdNum`='0' WHERE ( aUser='system' OR aTel='system' ) [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000306s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000929s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023360s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001961s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002543s ]
+
+[ 2017-07-30T11:14:01+08:00 ] ::1 /mssd/1/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000131s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003484s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0099s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `sName`,`sDepartment`,`sCopyrightName`,`sCopyrightAuthor`,`sVersion`,`sCopyrightAuthorTel`,`sCopyrightAuthorQQ` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `saya_admin_role` [ RunTime:0.0096s ]
+NOTIC: [8] Undefined variable: morepowersValue E:\wampserver\www\mssd\1\Application\Personnelsystem\Controller\IndexController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `saya_department` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `saya_department` WHERE ( dId=0 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `saya_staff` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_staff` WHERE `stBirthdate` LIKE '%07-30%' AND `stBirthdateType` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_staff` WHERE `stBirthdate` LIKE '%07-08%' AND `stBirthdateType` = 2 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `saya_hdmenu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `saya_hdmenu`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000820s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001498s ]
+NOTIC: [8] Undefined variable: rs_users E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\893122f858811a5339e67690bf0a2103.php 第 32 行.
+NOTIC: [8] Undefined variable: rs_admin E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\893122f858811a5339e67690bf0a2103.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003086s ]
+
+[ 2017-07-30T11:14:01+08:00 ] ::1 /mssd/1/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000129s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002869s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0102s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `saya_admin` [ RunTime:0.0119s ]
+SQL: SELECT `aLoginNum` FROM `saya_admin` WHERE ( aUser='system' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `saya_admin_role` [ RunTime:0.0102s ]
+NOTIC: [8] Undefined variable: morepowersValue E:\wampserver\www\mssd\1\Application\Personnelsystem\Controller\IndexController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `saya_hdmenu` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `saya_hdmenu`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_admin_role` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_admin` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `saya_department` [ RunTime:0.0096s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_department` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `saya_staff` [ RunTime:0.0102s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_staff` WHERE ( stBlacklist=0 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_staff` WHERE ( stJobState=1 AND stBlacklist=0 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_staff` WHERE ( stJobState=0 AND stBlacklist=0 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `saya_staff` WHERE ( stBlacklist=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `sName`,`sCopyrightName`,`sCopyrightAuthor`,`sCopyrightAuthorTel`,`sCopyrightAuthorQQ` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000602s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001317s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002927s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003063s ]
+
+[ 2017-07-30T16:29:10+08:00 ] ::1 /mssd/1/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000129s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001803s ]
+
+[ 2017-07-30T16:29:15+08:00 ] ::1 /mssd/1/Department/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001951s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0398s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000598s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001400s ]
+
+[ 2017-07-30T16:29:18+08:00 ] ::1 /mssd/1/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001958s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0274s ]
+SQL: SELECT `sLogo`,`sName`,`sCopyrightName`,`sCopyrightAuthor`,`sCheckCodeSwitch`,`sVersion`,`sCopyrightAuthorTel`,`sCopyrightAuthorQQ` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000226s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000586s ]
+NOTIC: [8] Undefined index: sname E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\a451a05b0825cb45a2701106fb08940a.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038387s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001862s ]
+
+[ 2017-07-30T16:29:21+08:00 ] ::1 /mssd/1/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002005s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0069s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `sLoginTimeout` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `sName`,`sDepartment`,`sCopyrightName`,`sCopyrightAuthor`,`sVersion`,`sCopyrightAuthorTel`,`sCopyrightAuthorQQ` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `saya_admin_role` [ RunTime:0.0059s ]
+NOTIC: [8] Undefined variable: morepowersValue E:\wampserver\www\mssd\1\Application\Personnelsystem\Controller\IndexController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `saya_department` [ RunTime:0.0075s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2017-07-30T16:29:21+08:00 ] ::1 /mssd/1/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000130s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002554s ]
+SQL: SHOW COLUMNS FROM `saya_system` [ RunTime:0.0107s ]
+SQL: SELECT `sLogo`,`sName`,`sCopyrightName`,`sCopyrightAuthor`,`sCheckCodeSwitch`,`sVersion`,`sCopyrightAuthorTel`,`sCopyrightAuthorQQ` FROM `saya_system` WHERE ( sId=1 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000644s ]
+NOTIC: [8] Undefined index: sname E:\wampserver\www\mssd\1\Application\Runtime\Cache\Personnelsystem\a451a05b0825cb45a2701106fb08940a.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002102s ]
+

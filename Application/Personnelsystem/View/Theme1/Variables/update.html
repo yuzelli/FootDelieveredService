@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配置变量</title>
+    <link rel="shortcut icon" href="favicon.ico"> <link href="__PUBLIC__/Theme1/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="__PUBLIC__/Theme1/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="__PUBLIC__/Theme1/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="__PUBLIC__/Theme1/css/animate.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/Theme1/css/style.min.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>配置变量 <a href="__URL__/lists" style="margin-left:15px; color:#06cbc4">变量列表</a></h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <form method="post" action="__URL__/UpdateAction/vId/<{$rs_variables.vId}>" class="form-horizontal" id="form-admin-add" >
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">变量编号</label>
+                                <div class="col-sm-10">
+                                    <input type="number" style="width: 100%" name="vNum" id="vNum" value="<{$rs_variables.vNum}>" placeholder="请填写正整数"  class="form-control">
+                                </div>
+                            </div>
+                            
+                                <div class="form-group">
+                                <label class="col-sm-2 control-label">变量说明</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" name="vVariablesExplain" id="vVariablesExplain" value="<{$rs_variables.vVariablesExplain}>" placeholder="控制在10个字以内" class="form-control">
+                                    </div>
+                            	</div>
+                            
+                            
+                                <div class="form-group">
+                                <label class="col-sm-2 control-label">变量名</label>
+                                    <div class="col-sm-10">
+                                    <input type="text" name="vVariables" id="vVariables" value="<{$rs_variables.vVariables}>" placeholder="英文单词或字母" class="form-control">   
+                                    </div>
+                            	</div>
+
+                                <div class="form-group">
+                                <label class="col-sm-2 control-label">变量值</label>
+                                    <div class="col-sm-10">
+                                    <textarea class="input-text form-control" name="vVariablesVal" id="vVariablesVal" rows="8" placeholder="多个值之间用|隔开"><{$rs_variables.vVariablesVal}></textarea>
+                                       
+                                    </div>
+                                </div>
+                           
+                           
+                                
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-2">
+                                    <button class="btn btn-primary" type="submit">保存</button>
+                                   
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="__PUBLIC__/Theme1/js/jquery.min.js?v=2.1.4"></script>
+    <script src="__PUBLIC__/Theme1/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="__PUBLIC__/Theme1/js/content.min.js?v=1.0.0"></script>
+    <script src="__PUBLIC__/Theme1/js/plugins/iCheck/icheck.min.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Theme1/check/js/jquery.validate.min.js"></script> 
+
+<script type="text/javascript" src="__PUBLIC__/Theme1/check/js/messages_zh.min.js"></script> 
+
+
+
+<script type="text/javascript" src="__PUBLIC__/Theme1/check/js/validate-methods.js"></script> 
+
+
+
+   
+    <script>
+        $(document).ready(function(){$(".i-checks").iCheck({checkboxClass:"icheckbox_square-green",radioClass:"iradio_square-green",})});
+    </script>
+    
+    <script type="text/javascript">
+	$(function(){
+	$("#form-admin-add").validate({
+		rules:{
+			vNum:{
+                required:true,
+            },
+           vVariablesExplain:{
+                required:true,
+            },
+            vVariables:{
+                required:true,
+            },
+		},
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(form){
+			$(form).ajaxSubmit();
+			var index = parent.layer.getFrameIndex(window.name);
+			parent.$('.btn-refresh').click();
+			parent.layer.close(index);
+		}
+	});
+});
+</script> 
+    
+    
+</body>
+
+</html>
